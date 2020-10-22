@@ -17,8 +17,10 @@
         }
 
         public function dump(){
-           echo $this->$arr[array_search(max($this->$arr), $this->$arr)] + $this->$arr[array_search(min($this->$arr), $this->$arr)];
-        }
+           echo "Cумма чисел:",$this->$arr[array_search(max($this->$arr), $this->$arr)] + $this->$arr[array_search(min($this->$arr), $this->$arr)];
+           echo "</br>";
+           echo "Сумма индексов:", array_search(max($this->$arr), $this->$arr) + array_search(min($this->$arr), $this->$arr);
+         }
 
         function __construct()
         {
